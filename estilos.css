@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #0d0d0d 60%, #050505 100%);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #00bfff, #0066ff);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+nav { 
+    background: rgb(36, 36, 36); 
+    margin: 0;
+    padding: 10px;
+    text-align: center; 
+}
+
+#intro .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.robot-img {
+    width: 280px;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+.texto {
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.texto h2 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.roles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background: #111;
+    border: 2px solid #00bfff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 15px #0066ff;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+iframe {
+    width: 360px;
+    height: 200px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.imagenes img {
+    width: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: rotate(3deg) scale(1.05);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0066ff;
+}
+
+/* Animaciones */
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .texto {
+        margin-left: 0;
+        text-align: center;
+    }
+    .robot-img {
+        margin-bottom: 20px;
+    }
+    iframe {
+        width: 90%;
+    }
+}

@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1a1919;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #009dff, #002fff, #009dff, #5900ff, #4400ff, #009dff);
+    background-size: 300% 300%;
+    animation: gradient 8s ease infinite;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 20px #00d4ff;
+}
+
+/*@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}*//*esto si queremos dar animacion a los colores del titulo*/
+
+.titulo {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+nav {
+    background-color: #181717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #00d4ff;
+}
+
+nav a {
+    color: #008cff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding-right: 15px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.todo {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: radial-gradient(circle at center, #111111 50%, #141414 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00d4ff33;
+    transition: transform 0.3s ease;
+}
+
+.todo h1 {
+    color: #00ffd5;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.todo h2 {
+    color: #00d4ff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.todo ul {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.todo li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.parr {
+    font-size: 1.05rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #111;
+    color: #00d4ff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 2px solid #00d4ff;
+}
+
+.galeria12{
+    margin-top: 5px;
+    width: 310px;
+    height: auto;
+    border: 10px solid transparent;
+    border-radius: 25px;
+}
+
+.imagene{
+    display: block; 
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.imagen2{
+    width: 720px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.imagen{
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Animación al aparecer */
+[data-animar] img {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+[data-animar] img.animar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.robot-img {
+    display: block;         /* hace que la imagen se comporte como bloque */
+    margin: 20px auto;      /* centra horizontalmente *//*esto es muy raro pero util pase mucho tiempo sin poder centrar la imagen*/
+    width: 500px;
+    border-radius: 10px;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+
+.robot-img:hover {
+    transform: scale(1.1);
+}
+
+.texto h2{
+
+    text-align: center;
+}
+
+.texto h1{
+    text-align: center;
+}
+
+.video-container{
+    padding-bottom: 18px;
+}
+
+.video-container iframe{
+
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+.ya-estoy-cansado{
+    text-align: center;
+}
+
+.curriculo {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;                /* Coloca los elementos en una fila */
+    align-items: center;          /* Centra verticalmente imagen y texto */
+    background-color: #111;       /* (opcional) fondo */
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;                    /* Espacio entre imagen y texto */
+    color: white;                 /* Color del texto */
+}
+
+.cur {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;            /* Mantiene proporción sin deformar */
+    border-radius: 10px;
+}
+
+.curtex {
+    flex: 1;                      /* Ocupa todo el espacio restante */
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+/*esto es para la derecha*/
+
+.curriculo2 {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /*Cambia el orden: imagen a la derecha  util porque es mas facil que andar cambiando todo*/
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    color: white;
+}
+
+.pipi{
+    width: 90%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.consulta a{
+    text-decoration: none;
+    color: white;
+}
+
+/*cuando una imagen como la que utilize es 1043 x 1043 y puse 100px en width la imagen desaparecia y me demore pero asido porque 
+la imagen estaba muy pequeña y cubiendolo a 150px en width ya se arreglo*/
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .todo {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .robot-img{
+        width: 380px;
+    }
+    .curriculo {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    color: white;
+}
+
+.cur {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.curtex {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+}
